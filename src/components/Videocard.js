@@ -39,7 +39,7 @@ function Videocard({ video, deleteStatus, inCard }) {
     const response = await deleteVedio(id)
     console.log(response);
     if (response.status >= 200 && response.status <= 300) {
-      toast.success("video deleted successfully")
+      alert("video deleted successfully")
       deleteStatus(true)
     }
 
@@ -85,18 +85,7 @@ function Videocard({ video, deleteStatus, inCard }) {
 
       </Modal>
 
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
+    
     </div>
   )
 }
