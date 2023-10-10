@@ -111,7 +111,7 @@ function Category() {
 
 
   return (
-    <div>
+    <div style={{marginBottom:'150px'}}>
 
       <button 
         className='btn btn-secondary w-100 text-white fw-bolder mb-3' 
